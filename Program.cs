@@ -23,71 +23,81 @@ namespace Conditional_Statement
                 //Convert input to an integer
                 int grade = int.Parse(input);
 
-                //if else if statements to test the inputs correct letter grade from syllabus
-                if (grade < 60)
+                if ((grade >= 0) && (grade <= 100))
                 {
-                    //Displays the correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: F");
+                    //if else if statements to test the inputs correct letter grade from syllabus
+                    if (grade < 60)
+                    {
+                        //Displays the correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: F");
+                    }
+                    else if ((grade <= 61) && (grade >= 60))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: D-");
+                    }
+                    else if ((grade <= 67) && (grade >= 62))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: D");
+                    }
+                    else if ((grade <= 69) && (grade >= 68))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: D+");
+                    }
+                    else if ((grade <= 71) && (grade >= 70))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: C-");
+                    }
+                    else if ((grade <= 77) && (grade >= 72))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: C");
+                    }
+                    else if ((grade <= 79) && (grade >= 78))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: C+");
+                    }
+                    else if ((grade <= 81) && (grade >= 80))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: B-");
+                    }
+                    else if ((grade <= 87) && (grade >= 82))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: B");
+                    }
+                    else if ((grade <= 89) && (grade >= 88))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: B+");
+                    }
+                    else if ((grade <= 91) && (grade >= 90))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: A-");
+                    }
+                    else if ((grade <= 97) && (grade >= 92))
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: A");
+                    }
+                    else
+                    {
+                        //Displays correct letter grade
+                        Console.WriteLine("Your expected letter grade based on Syllabus: A+");
+                    }
                 }
-                else if ((grade <= 61) && (grade >= 60))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: D-");
-                }
-                else if ((grade <= 67) && (grade >= 62))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: D");
-                }
-                else if ((grade <= 69) && (grade >= 68))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: D+");
-                }
-                else if ((grade <= 71) && (grade >= 70))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: C-");
-                }
-                else if ((grade <= 77) && (grade >= 72))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: C");
-                }
-                else if ((grade <= 79) && (grade >= 78))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: C+");
-                }
-                else if ((grade <= 81) && (grade >= 80))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: B-");
-                }
-                else if ((grade <= 87) && (grade >= 82))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: B");
-                }
-                else if ((grade <= 89) && (grade >= 88))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: B+");
-                }
-                else if ((grade <= 91) && (grade >= 90))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: A-");
-                }
-                else if ((grade <= 97) && (grade >= 92))
-                {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: A");
-                }
+
                 else
                 {
-                    //Displays correct letter grade
-                    Console.WriteLine("Your expected letter grade based on Syllabus: A+");
+                    Console.WriteLine("You have entered an integer value not within the parameters :(");
+                    Console.WriteLine("Please enter an integer value for your expected grade next time!");
+                    Console.WriteLine("Press any key to exit the program and try again...");
                 }
             }
 
